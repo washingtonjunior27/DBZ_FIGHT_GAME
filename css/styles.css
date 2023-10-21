@@ -41,7 +41,7 @@ i{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: calc(100vh - 6rem);
 }
 .main-container::after{
     content: '';
@@ -58,11 +58,19 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: calc(100vh - 6rem);
+    z-index: 1;
+    padding: 0 5%;
+}
+.start h1{
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--white);
 }
 .start .btn{
     padding: 1rem 3rem;
-    z-index: 1;
 }
 /* MAIN */
 .main{
